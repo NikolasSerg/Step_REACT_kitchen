@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import loadingUserData from './loadingUserData'
+import loadData from './loadData'
 
 export default combineReducers({
-    data: loadingUserData
+    loadData
 })

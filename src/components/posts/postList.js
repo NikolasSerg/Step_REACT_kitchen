@@ -2,21 +2,24 @@ import React, {Component} from 'react';
 // import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 
-import PostItem from './postItem';
+// import PostItem from './postItem';
 import {load_articles} from '../../AC'
 
 class PostList extends Component {
-    componentWillMount() {
+
+    componentDidMount() {
 	this.props.load_articles();
+		window.posts =  this.props.posts;
     }
 	render() {
 		return (
 			<div>
-				<PostItem {...this.props}/>
+				{this.props.posts}
 			</div>
 		);
 	}
 }
 
-export default connect(null, {load_articles})(PostList);
+
+export default connect((state) => ({posts: state.loadData}), {load_articles})(PostList);
 // PostList.propTypes = {};
