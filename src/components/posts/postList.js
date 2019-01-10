@@ -14,7 +14,9 @@ class PostList extends Component {
 	render() {
 		return (
 			<div>
-				{this.props.posts}
+				<p>має бути пропс</p>
+				<p>{this.props.posts[0]}</p>
+				{JSON.stringify(this.props.posts[0])}
 			</div>
 		);
 	}

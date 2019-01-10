@@ -7,6 +7,7 @@ export default (loadData = [], action) => {
 
 	switch (type) {
 		case LOAD_ARTICLES:
+			console.log(action.reference);
 			dataRef = database.ref(action.reference);
 			dataRef.on('value', (snapshot) => { loadData.push(snapshot.val()) });
 			return loadData;

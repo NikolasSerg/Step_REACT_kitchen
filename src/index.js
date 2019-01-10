@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import store from './store/index';
 import {Provider} from 'react-redux';
+import * as serviceWorker from './serviceWorker';
 
 
 ReactDOM.render(
@@ -10,3 +11,4 @@ ReactDOM.render(
         <App/>
     </Provider>
     , document.getElementById('root'));
+serviceWorker.register();
