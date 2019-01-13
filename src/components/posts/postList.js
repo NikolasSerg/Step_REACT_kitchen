@@ -12,11 +12,18 @@ class PostList extends Component {
 		window.posts =  this.props.posts;
     }
 	render() {
+    	console.log(this.props);
+
 		return (
 			<div>
 				<p>має бути пропс</p>
-				<p>{this.props.posts[0]}</p>
-				{JSON.stringify(this.props.posts[0])}
+				{/*<p>{this.props}</p>*/}
+				{/*{this.props.posts.map((iterator) => {*/}
+					{/*return(*/}
+						{/*<p>{iterator.lorem1}</p>*/}
+					{/*)*/}
+				{/*})}*/}
+				{/*{JSON.stringify(this.props.posts[0])}*/}
 			</div>
 		);
 	}
