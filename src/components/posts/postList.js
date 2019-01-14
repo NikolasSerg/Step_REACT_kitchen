@@ -7,10 +7,10 @@ import {load_articles} from '../../AC'
 
 class PostList extends Component {
 
-    componentDidMount() {
-	this.props.load_articles();
-		window.posts =  this.props.posts;
-    }
+    // componentDidMount() {
+	// this.props.load_articles();
+	// 	window.posts =  this.props.posts;
+    // }
 	render() {
     	console.log(this.props);
 

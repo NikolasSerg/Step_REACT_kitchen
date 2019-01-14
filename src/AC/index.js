@@ -1,4 +1,4 @@
-import {LOAD_ARTICLES} from '../constants';
+import {LOAD_ARTICLES} from '../constants/constants';
 
 export function load_articles() {
     return {
