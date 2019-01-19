@@ -1,4 +1,4 @@
-import { LOAD_ARTICLES } from '../constants';
+import { LOAD_ARTICLES } from '../constants/constants';
 import {database} from '../firebase/firebase';
 
 export default (loadData = [], action) => {
