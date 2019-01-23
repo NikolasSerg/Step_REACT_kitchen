@@ -1,5 +1,5 @@
 import { LOAD_ARTICLES } from '../constants/constants';
-import {database} from '../firebase/firebase';
+import {database} from '../components/Firebase/firebase';
 
 export default (loadData = [], action) => {
 	const { type } = action;

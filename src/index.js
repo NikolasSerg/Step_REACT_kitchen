@@ -1,24 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import App from './App';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
+import Firebase, {FirebaseContext} from './components/Firebase';
 
 ReactDOM.render(
-        <App />
+    <FirebaseContext.Provider value={new Firebase()}>
+        <App/>
+    </FirebaseContext.Provider>
     , document.getElementById('root'));
+
 serviceWorker.register();
-
-
-//
-// import store from './store/index';
-// import {Provider} from 'react-redux';
-
-//
-//
-// ReactDOM.render(
-//     <Provider store = {store}>
-//         <App/>
-//     </Provider>
-//     , document.getElementById('root'));
-// serviceWorker.register();
